@@ -1,6 +1,6 @@
 # create-my-project
 
-`create-boreal-package` is a CLI tool that helps you quickly scaffold a new project based on a predefined template. It clones a template repository, sets up a new git repository, and installs dependencies, allowing you to start coding right away.
+`create-boreal-package` is a CLI tool that helps you quickly make a new package based on your needs.
 
 ## Installation
 
