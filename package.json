@@ -1,15 +1,17 @@
 {
   "name": "create-boreal-package",
   "version": "1.0.1",
-  "description": "CLI tool to create a new project from my template",
+  "description": "CLI tool to create a new package ",
   "main": "index.js",
   "bin": {
     "create-boreal-package": "./index.js"
   },
+  "repository": "https://github.com/mdhira-ai/makepackage",
+  "homepage": "https://github.com/mdhira-ai/makepackage#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["cli", "create", "project", "template"],
-  "author": "Your Name",
-  "license": "ISC"
+  "author": "Md Habibor Rahman Hir",
+  "license": "MIT"
 }
