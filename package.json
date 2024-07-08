@@ -1,0 +1,15 @@
+{
+  "name": "create-boreal-package",
+  "version": "1.0.1",
+  "description": "CLI tool to create a new project from my template",
+  "main": "index.js",
+  "bin": {
+    "create-boreal-package": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["cli", "create", "project", "template"],
+  "author": "Your Name",
+  "license": "ISC"
+}
