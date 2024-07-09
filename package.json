@@ -1,6 +1,6 @@
 {
   "name": "create-boreal-package",
-  "version": "1.0.3",
+  "version": "1.0.24",
   "description": "CLI tool to create a new package ",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cli", "create", "project", "template"],
-  "author": "Md Habibor Rahman Hir",
-  "license": "MIT"
+  "keywords": [
+    "cli",
+    "create",
+    "boreal",
+    "template"
+  ],
+  "author": "Md Habibor Rahman Hira",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^10.0.1",
+    "simple-git": "^3.25.0"
+  }
 }

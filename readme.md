@@ -14,6 +14,12 @@ To create a new project, run one of the following commands:
 npx create-boreal-package
 ```
 
+or
+
+
+```bash
+npm create boreal-package
+```
 
 
 ## What's Included
