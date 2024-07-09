@@ -13,7 +13,7 @@ async function main() {
       type: "list",
       name: "name",
       message: "select a framework",
-      choices: ["Electronjs with nextjs", "make a new package"],
+      choices: ["Electronjs with nextjs", "make a new package", "make a new CLI"],
     },
   ]);
 
@@ -45,10 +45,19 @@ async function checkanddownload(ans) {
         console.log("downloading");
 
         git.clone("https://github.com/mdhira-ai/electronjs.nextjs", projectname.name);
-      } else {
+      } else if (ans == "make a new package") {
         console.log("downloading");
 
+        git.clone("https://github.com/mdhira-ai/dcomponents", projectname.name);
+      }
+
+      else if (ans == "make a new CLI") {
+        console.log("downloading");
         git.clone("https://github.com/mdhira-ai/makepackage", projectname.name);
+      }
+      else {
+        console.log("Invalid option");
+        process.exit(1);
       }
     }
 
