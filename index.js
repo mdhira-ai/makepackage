@@ -4,8 +4,7 @@ const process = require("process");
 const fs = require("fs");
 const simpleGit = require("simple-git");
 
-
-const prompt = inquirer.createPromptModule()
+const prompt = inquirer.createPromptModule();
 
 async function main() {
   const ans = await prompt([
@@ -13,7 +12,11 @@ async function main() {
       type: "list",
       name: "name",
       message: "select a framework",
-      choices: ["Electronjs with nextjs", "make a new package", "make a new CLI"],
+      choices: [
+        "Electronjs with nextjs",
+        "make a new package",
+        "make a new CLI",
+      ],
     },
   ]);
 
@@ -35,40 +38,39 @@ async function checkanddownload(ans) {
   //check if folder exist
   try {
     if (fs.existsSync(projectname.name)) {
-      console.log("project already exist");
+      console.log(`project ${projectname.name} already exist`);
 
       process.exit(1);
     } else {
       fs.mkdirSync(projectname.name);
 
       if (ans == "Electronjs with nextjs") {
-        console.log("downloading");
-
-        git.clone("https://github.com/mdhira-ai/electronjs.nextjs", projectname.name);
+        git.clone(
+          "https://github.com/mdhira-ai/electronjs.nextjs",
+          projectname.name
+        );
+        console.log("Project created successfully");
       } else if (ans == "make a new package") {
-        console.log("downloading");
 
         git.clone("https://github.com/mdhira-ai/dcomponents", projectname.name);
-      }
-
-      else if (ans == "make a new CLI") {
-        console.log("downloading");
+        console.log("Project created successfully");
+      } else if (ans == "make a new CLI") {
         git.clone("https://github.com/mdhira-ai/makepackage", projectname.name);
-      }
-      else {
+        console.log("Project created successfully");
+      } else {
         console.log("Invalid option");
         process.exit(1);
       }
-    }
 
-  }
-  catch (err) {
+      console.log(
+        `cd ${projectname.name} \n` + "npm install\n" + "npm run dev" + "😊"
+      );
+    }
+  } catch (err) {
     console.log(err);
 
     process.exit(1);
   }
 }
 
-
 main();
-
