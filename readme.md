@@ -1,14 +1,14 @@
-# create-my-project
+# Boreal Package Generator
 
-`create-boreal-package` is a CLI tool that helps you quickly make a new package based on your needs.
+## Introduction
 
-## Installation
+The Boreal Package Generator allows you to quickly create projects with different configurations. By running a few commands, you can set up a project with Electron.js and Next.js, create a new package, or develop a new CLI.
 
-You don't need to install this package globally. You can use it directly with `npx` .
+## Getting Started
 
-## Usage
+### Step 1: Run the Initial Command
 
-To create a new project, run one of the following commands:
+To get started, run the following command:
 
 ```bash
 npx create-boreal-package
@@ -22,37 +22,39 @@ npm create boreal-package
 ```
 
 
-## What's Included
+### Step 2: Choose an Option
 
-The project template includes [list some key features or structures of your template, for example]:
+After running the initial command, you will see three options:
 
-- A basic project structure
-- Essential configuration files
+a) **Electron.js with Next.js**
+b) **Make a new package**
+c) **Make a new CLI**
 
-## After Creation
+### Step 3: Select an Option
 
-Once your project is created, you can start working on it immediately:
+#### Option (a): Electron.js with Next.js
+
+If you select this option, the generator will create a project with Electron.js, Next.js, and Tailwind CSS. This setup allows you to build software for Windows, macOS, and Linux easily.
+
+#### Option (b): Make a New Package
+
+Selecting this option will give you a directory with TypeScript, Rollup.js, and example code. This setup is a complete bundle for creating custom packages.
+
+#### Option (c): Make a New CLI
+
+Choosing this option will provide you with a complete bundle for developing a new Command Line Interface (CLI).
+
+### Step 4: Install Dependencies
+
+After selecting one of the options and the project is generated, navigate to the project folder and install the dependencies:
 
 ```bash
-cd your-project-name
-npm start
+cd your-project-folder
+npm install
 ```
 
+Your project is now set up and ready for development!
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the [Your chosen license] License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Thanks to all contributors and users of this tool
-
-## Support
-
-If you encounter any problems or have any questions, please open an issue in the GitHub repository.
-
-Happy coding!
+Feel free to customize this README to fit your project's specific needs and provide additional instructions or information as necessary.
