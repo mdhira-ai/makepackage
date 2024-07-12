@@ -8,6 +8,17 @@ The Boreal Package Generator allows you to quickly create projects with differen
 
 ### Step 1: Run the Initial Command
 
+### Prerequisites
+
+Before you begin, make sure you have Git installed on your system. If you don't have Git installed, you can download it from the official website:
+
+[Download Git](https://git-scm.com/downloads)
+
+After installing Git, you can proceed with the following steps.
+
+### Step 1: Run the Initial Command
+
+
 To get started, run the following command:
 
 ```bash
@@ -38,7 +49,9 @@ If you select this option, the generator will create a project with Electron.js,
 
 #### Option (b): Make a New Package
 
-Selecting this option will give you a directory with TypeScript, Rollup.js, and example code. This setup is a complete bundle for creating custom packages.
+Selecting this option will give you a directory with TypeScript, Rollup.js, and example code. This setup is a complete bundle for creating custom packages. follow this [GitHub Repository](https://github.com/username/boreal-package-generator)
+
+
 
 #### Option (c): Make a New CLI
 
