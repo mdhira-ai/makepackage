@@ -49,7 +49,7 @@ If you select this option, the generator will create a project with Electron.js,
 
 #### Option (b): Make a New Package
 
-Selecting this option will give you a directory with TypeScript, Rollup.js, and example code. This setup is a complete bundle for creating custom packages. follow this [GitHub Repository](https://github.com/username/boreal-package-generator)
+Selecting this option will give you a directory with TypeScript, Rollup.js, and example code. This setup is a complete bundle for creating custom packages. follow this steps [GitHub Repository](https://github.com/mdhira-ai/dcomponents)
 
 
 

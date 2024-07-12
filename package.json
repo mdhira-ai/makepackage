@@ -1,6 +1,6 @@
 {
   "name": "create-boreal-package",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "CLI tool to create a new package ",
   "main": "index.js",
   "bin": {
